@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="了解网络检测涉及的信息、本地报告的保存方式，以及您对检测与分享的选择。">
+  <title>隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f4f1;
+      --surface: #ffffff;
+      --text: #17171a;
+      --muted: #6e6e76;
+      --line: #ebe9e4;
+      --accent: #2d5be3;
+      --accent-soft: #e6eeff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e10;
+        --surface: #1c1c1f;
+        --text: #f2f2f4;
+        --muted: #a3a3ab;
+        --line: #2c2c30;
+        --accent: #7c9bff;
+        --accent-soft: #1f2a47;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      overflow-wrap: break-word;
+    }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+    .skip { position: absolute; top: -100px; left: 16px; padding: 8px 16px; background: var(--surface); }
+    .skip:focus { top: 12px; }
+    .shell { width: min(100% - 48px, 1080px); margin: 0 auto; }
+    .document-nav { display: flex; gap: 28px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .document-nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+    .document-nav a.current { color: var(--text); font-weight: 600; text-decoration: underline; }
+    header { padding: 48px 0 32px; max-width: 740px; }
+    .eyebrow { margin: 0 0 10px; color: var(--muted); font-size: 14px; letter-spacing: .12em; }
+    h1 { margin: 0 0 18px; font-size: clamp(32px, 5vw, 46px); line-height: 1.25; letter-spacing: -.04em; }
+    .intro { margin: 0; color: var(--muted); }
+    .layout { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 40px; align-items: start; padding-bottom: 48px; }
+    .toc { position: sticky; top: 24px; padding: 18px 0; }
+    .toc h2 { font-size: 14px; color: var(--muted); margin: 0 0 10px; font-weight: 500; }
+    .toc ol { list-style: none; padding: 0; margin: 0; }
+    .toc a { display: block; min-height: 44px; padding: 7px 0; text-decoration: none; font-size: 15px; }
+    .paper { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 10px 36px; }
+    section { padding: 26px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    h2 { font-size: 21px; line-height: 1.5; margin: 0 0 14px; }
+    p { margin: 0 0 14px; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { padding-left: 1.35em; margin: 0 0 14px; }
+    li + li { margin-top: 8px; }
+    .note { background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; }
+    footer { display: flex; flex-wrap: wrap; gap: 16px 28px; padding: 24px 0 36px; border-top: 1px solid var(--line); font-size: 14px; }
+    footer a { display: inline-block; padding: 8px 0; }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 32px, 620px); }
+      header { padding: 32px 0 24px; }
+      .layout { grid-template-columns: 1fr; gap: 20px; padding-bottom: 28px; }
+      .toc { position: static; padding: 0; }
+      .toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
+      .paper { padding: 2px 22px; border-radius: 16px; }
+      section { padding: 24px 0; }
+      h2 { font-size: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --line: #ccc; --accent: #000; --accent-soft: #fff; }
+      body { font-size: 11pt; line-height: 1.65; }
+      .shell { width: 100%; }
+      .skip, .document-nav, .toc, footer { display: none; }
+      header { padding: 0 0 18pt; max-width: none; }
+      h1 { font-size: 26pt; }
+      .layout { display: block; padding: 0; }
+      .paper { border: 0; padding: 0; border-radius: 0; }
+      section { padding: 14pt 0; }
+      h2 { font-size: 14pt; break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+      .note { border: 1px solid var(--line); }
+      a { text-decoration: none; }
+      @page { margin: 18mm; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#content">跳至正文</a>
+  <div class="shell">
+    <nav class="document-nav" aria-label="法律文件">
+      <a href="privacy.html" class="current" title="当前页面">隐私政策</a>
+      <a href="terms.html">使用条款</a>
+    </nav>
+    <header>
+      <p class="eyebrow">服务与权益</p>
+      <h1>隐私政策</h1>
+      <p class="intro">了解网络检测涉及的信息、本地报告的保存方式，以及您对检测与分享的选择。</p>
+    </header>
+    <div class="layout">
+      <nav class="toc" aria-label="本页目录">
+        <h2>本页目录</h2>
+        <ol>
+            <li><a href="#scope">01 · 服务与适用范围</a></li>
+            <li><a href="#data">02 · 处理哪些信息</a></li>
+            <li><a href="#purpose">03 · 信息的使用方式</a></li>
+            <li><a href="#services">04 · 第三方请求与分享</a></li>
+            <li><a href="#storage">05 · 保存与清除</a></li>
+            <li><a href="#choices">06 · 您的选择与信息安全</a></li>
+            <li><a href="#age">07 · 未成年人</a></li>
+            <li><a href="#changes">08 · 政策调整</a></li>
+        </ol>
+      </nav>
+      <main class="paper" id="content" tabindex="-1">
+        <section id="scope">
+          <h2>01 · 服务与适用范围</h2>
+          <p>本政策说明您使用网络检测、综合体检、报告查看、导入及分享功能时，相关信息如何被处理。服务仅面向年满 18 周岁的用户。</p>
+          <p>网络检测会连接检测服务器、解析服务及被测站点，并由节点临时传输网络数据。此处的传输用于完成检测请求与返回结果；相关服务是否保存访问记录，取决于其自身的数据处理规则。</p>
+        </section>
+        <section id="data">
+          <h2>02 · 处理哪些信息</h2>
+          <ul>
+          <li><strong>网络与检测信息：</strong>公网地址、出口地区、网络运营商、连接协议、域名解析结果、服务可达性、响应时间、上下行速率，以及所选检测返回的质量评分和连接特征。</li>
+          <li><strong>设备环境信息：</strong>用于解释检测结果的系统类型、语言、时区等信息。综合体检通过内嵌网页运行，网页还可能读取浏览器环境、屏幕参数及检测所需的浏览器特征。</li>
+          <li><strong>本地设置与报告：</strong>语言、外观、自动体检偏好，以及报告中的检测时间、结果、评分和未完成项目。</li>
+          <li><strong>您主动提供的内容：</strong>查询时输入的地址、域名等参数，以及主动粘贴的报告链接。导入时解析您提供的链接内容，用于展示对应报告。</li>
+          </ul>
+          <p>当前应用无需注册账户，也不要求您提交姓名、手机号码、通讯录或精确定位。通过公网地址推断的地区不等同于设备的精确位置。</p>
+        </section>
+        <section id="purpose">
+          <h2>03 · 信息的使用方式</h2>
+          <p>上述信息用于执行您选择的检测、展示网络状态、生成与回放报告，以及恢复您的界面偏好。查询参数会按对应工具的需要发送给相关检测服务。</p>
+          <p>开启“打开应用就开始体检”后，再次打开应用可能自动发起检测请求。您可以在设置中关闭此功能，也可以停止正在进行的检测。</p>
+        </section>
+        <section id="services">
+          <h2>04 · 第三方请求与分享</h2>
+          <p>除本政策说明的检测请求及您主动选择的分享外，我们不共享个人信息。</p>
+          <p>检测请求会使接收请求的第三方获得您的公网地址、请求时间、必要的协议和请求头信息，以及该项检测提交的查询参数。综合体检所加载的网页也会连接其检测资源。第三方可能依据其自身规则处理访问日志、Cookie 或网页存储；本政策不代表对第三方保存期限或处理方式的承诺。</p>
+          <p>本地报告不会因保存在应用内而自动公开。您复制完整报告链接或通过系统菜单分享时，所选应用及接收人可以取得对应内容。打开分享链接的网页服务也可能读取并处理链接中的报告。</p>
+          <p class="note"><strong>分享前请检查内容。</strong>完整报告链接可能包含公网地址、地区和其他检测明细；链接编码不是加密，也没有访问密码。获得链接的人可以读取、复制或继续转发报告。界面中的地址遮蔽不代表完整链接已删除相关数据。</p>
+        </section>
+        <section id="storage">
+          <h2>05 · 保存与清除</h2>
+          <p>界面偏好和已归档的体检报告保存在本机。当前报告列表最多保留 20 份，新增报告超出上限时，较早的记录会从列表及对应本地报告存储中移除。</p>
+          <p>您可以通过系统的“删除应用”操作移除应用及其本地数据；仅“卸载应用”以保留文稿与数据的系统选项不等同于删除数据。系统备份中的副本需通过相应的系统备份设置管理。</p>
+          <p>内嵌网页可能保留 Cookie、缓存或网页存储。第三方服务器的访问记录、系统备份以及您已分享给他人的副本，不会随本地报告移除而自动删除，其管理方式取决于相应服务或接收方。</p>
+        </section>
+        <section id="choices">
+          <h2>06 · 您的选择与信息安全</h2>
+          <p>您可以查看本地报告、调整设置、关闭自动体检、停止检测，或不使用联网与分享功能。停止检测可以终止后续测量，但不能撤回已发送的请求或已分享的内容。</p>
+          <p>请妥善保管设备与分享链接，避免将包含地址或网络详情的报告公开发布。在共享设备上使用后，请按需清理剪贴板、导出的图片和系统分享目标中的副本。</p>
+        </section>
+        <section id="age">
+          <h2>07 · 未成年人</h2>
+          <p>本服务仅供年满 18 周岁的用户使用。未满 18 周岁不得下载、安装、访问或使用服务。如果您未达到年龄要求，请停止使用并删除应用及本地数据。</p>
+        </section>
+        <section id="changes">
+          <h2>08 · 政策调整</h2>
+          <p>当服务功能或信息处理方式发生变化时，本政策会相应调整。涉及需要另行告知或征得同意的变化时，应在相关处理开始前完成相应程序。</p>
+          <p>有关使用服务的规则，请阅读<a href="terms.html">使用条款</a>。</p>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <a href="terms.html">阅读使用条款</a>
+      <a href="#top">返回顶部 ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
