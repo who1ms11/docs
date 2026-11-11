@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Learn what information network tests involve, how local reports are stored, and your choices about testing and sharing.">
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f4f1;
+      --surface: #ffffff;
+      --text: #17171a;
+      --muted: #6e6e76;
+      --line: #ebe9e4;
+      --accent: #2d5be3;
+      --accent-soft: #e6eeff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e10;
+        --surface: #1c1c1f;
+        --text: #f2f2f4;
+        --muted: #a3a3ab;
+        --line: #2c2c30;
+        --accent: #7c9bff;
+        --accent-soft: #1f2a47;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      overflow-wrap: break-word;
+    }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+    .skip { position: absolute; top: -100px; left: 16px; padding: 8px 16px; background: var(--surface); }
+    .skip:focus { top: 12px; }
+    .shell { width: min(100% - 48px, 1080px); margin: 0 auto; }
+    .document-nav { display: flex; gap: 28px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .document-nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+    .document-nav a.current { color: var(--text); font-weight: 600; text-decoration: underline; }
+    header { padding: 48px 0 32px; max-width: 740px; }
+    .eyebrow { margin: 0 0 10px; color: var(--muted); font-size: 14px; letter-spacing: .12em; }
+    h1 { margin: 0 0 18px; font-size: clamp(32px, 5vw, 46px); line-height: 1.25; letter-spacing: -.04em; }
+    .intro { margin: 0; color: var(--muted); }
+    .layout { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 40px; align-items: start; padding-bottom: 48px; }
+    .toc { position: sticky; top: 24px; padding: 18px 0; }
+    .toc h2 { font-size: 14px; color: var(--muted); margin: 0 0 10px; font-weight: 500; }
+    .toc ol { list-style: none; padding: 0; margin: 0; }
+    .toc a { display: block; min-height: 44px; padding: 7px 0; text-decoration: none; font-size: 15px; }
+    .paper { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 10px 36px; }
+    section { padding: 26px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    h2 { font-size: 21px; line-height: 1.5; margin: 0 0 14px; }
+    p { margin: 0 0 14px; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { padding-left: 1.35em; margin: 0 0 14px; }
+    li + li { margin-top: 8px; }
+    .note { background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; }
+    footer { display: flex; flex-wrap: wrap; gap: 16px 28px; padding: 24px 0 36px; border-top: 1px solid var(--line); font-size: 14px; }
+    footer a { display: inline-block; padding: 8px 0; }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 32px, 620px); }
+      header { padding: 32px 0 24px; }
+      .layout { grid-template-columns: 1fr; gap: 20px; padding-bottom: 28px; }
+      .toc { position: static; padding: 0; }
+      .toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
+      .paper { padding: 2px 22px; border-radius: 16px; }
+      section { padding: 24px 0; }
+      h2 { font-size: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --line: #ccc; --accent: #000; --accent-soft: #fff; }
+      body { font-size: 11pt; line-height: 1.65; }
+      .shell { width: 100%; }
+      .skip, .document-nav, .toc, footer { display: none; }
+      header { padding: 0 0 18pt; max-width: none; }
+      h1 { font-size: 26pt; }
+      .layout { display: block; padding: 0; }
+      .paper { border: 0; padding: 0; border-radius: 0; }
+      section { padding: 14pt 0; }
+      h2 { font-size: 14pt; break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+      .note { border: 1px solid var(--line); }
+      a { text-decoration: none; }
+      @page { margin: 18mm; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="shell">
+    <nav class="document-nav" aria-label="Legal documents">
+      <a href="privacy-en.html" class="current" title="Current page">Privacy Policy</a>
+      <a href="terms-en.html">Terms of Use</a>
+    </nav>
+    <header>
+      <p class="eyebrow">Service and Your Rights</p>
+      <h1>Privacy Policy</h1>
+      <p class="intro">Learn what information network tests involve, how local reports are stored, and your choices about testing and sharing.</p>
+    </header>
+    <div class="layout">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+            <li><a href="#scope">01 · Scope of This Policy</a></li>
+            <li><a href="#data">02 · Information We Process</a></li>
+            <li><a href="#purpose">03 · How Information Is Used</a></li>
+            <li><a href="#services">04 · Third Parties and Sharing</a></li>
+            <li><a href="#storage">05 · Storage and Deletion</a></li>
+            <li><a href="#choices">06 · Your Choices and Security</a></li>
+            <li><a href="#age">07 · Age Requirement</a></li>
+            <li><a href="#changes">08 · Changes to This Policy</a></li>
+        </ol>
+      </nav>
+      <main class="paper" id="content" tabindex="-1">
+        <section id="scope">
+          <h2>01 · Scope of This Policy</h2>
+          <p>This policy explains how information is handled when you use network tests, comprehensive network checkups, and features for viewing, importing, and sharing reports. The service is available only to users who are at least 18 years of age.</p>
+          <p>Network tests connect to test servers, resolution services, and the sites being tested, with nodes temporarily transmitting network data. This transmission supports test requests and responses. Whether those services retain access records depends on their own data practices.</p>
+        </section>
+        <section id="data">
+          <h2>02 · Information We Process</h2>
+          <ul>
+          <li><strong>Network and test information:</strong> Public IP addresses, exit regions, network providers, connection protocols, domain resolution results, service reachability, response times, upload and download speeds, and quality scores and connection characteristics returned by the selected tests.</li>
+          <li><strong>Device environment:</strong> Information such as operating system type, language, and time zone, used to interpret results. Comprehensive checkups run through an embedded webpage, which may also read the browser environment, screen parameters, and browser characteristics needed for testing.</li>
+          <li><strong>Local settings and reports:</strong> Language, appearance, and automatic checkup preferences, together with test times, results, scores, and incomplete items in reports.</li>
+          <li><strong>Information you provide:</strong> Addresses, domains, and other query parameters you enter, as well as report links you choose to paste. When you import a report, the supplied link is parsed to display the corresponding report.</li>
+          </ul>
+          <p>The current app does not require an account or ask you to provide your name, phone number, contacts, or precise location. A region inferred from a public IP address is not the same as your device’s precise location.</p>
+        </section>
+        <section id="purpose">
+          <h2>03 · How Information Is Used</h2>
+          <p>This information is used to run the tests you select, display network status, generate and review reports, and restore your interface preferences. Query parameters are sent to the relevant testing services as needed by the selected tool.</p>
+          <p>If you enable automatic checkups on launch, opening the app again may automatically initiate test requests. You can disable this feature in settings and stop a test in progress.</p>
+        </section>
+        <section id="services">
+          <h2>04 · Third Parties and Sharing</h2>
+          <p>Except for the test requests described in this policy and sharing you choose to initiate, we do not share personal information.</p>
+          <p>Third parties receiving test requests obtain your public IP address, request time, necessary protocol and request header information, and any query parameters submitted for that test. The webpage used for comprehensive checkups also connects to its testing resources. Third parties may process access logs, cookies, or web storage under their own rules. This policy makes no commitment about their retention periods or processing practices.</p>
+          <p>Saving a report in the app does not automatically make it public. When you copy a full report link or share through the system share menu, the apps and recipients you choose can receive that content. A web service used to open a shared link may also read and process the report contained in the link.</p>
+          <p class="note"><strong>Review the content before sharing.</strong> Full report links may contain public IP addresses, regions, and other test details. Link encoding is not encryption, and there is no access password. Anyone with the link can read, copy, or forward the report. Masking an address in the interface does not mean that the corresponding data has been removed from the full link.</p>
+        </section>
+        <section id="storage">
+          <h2>05 · Storage and Deletion</h2>
+          <p>Interface preferences and archived checkup reports are stored on your device. The current report list retains up to 20 reports. When a new report exceeds this limit, older entries are removed from the list and its corresponding local report storage.</p>
+          <p>You can use the system’s “Delete App” action to remove the app and its local data. “Offload App,” which preserves documents and data, is not equivalent to deleting that data. Copies in system backups must be managed through the relevant backup settings.</p>
+          <p>Embedded webpages may retain cookies, caches, or web storage. Access records on third-party servers, system backups, and copies you have shared with others are not automatically deleted when a local report is removed. They are managed by the relevant service or recipient.</p>
+        </section>
+        <section id="choices">
+          <h2>06 · Your Choices and Security</h2>
+          <p>You can view local reports, adjust settings, disable automatic checkups, stop tests, or choose not to use features that connect to the network or share content. Stopping a test can end subsequent measurements, but it cannot recall requests already sent or content already shared.</p>
+          <p>Keep your device and shared links secure, and avoid publicly posting reports containing addresses or network details. After using a shared device, clear the clipboard, exported images, and copies held by apps you shared to, as appropriate.</p>
+        </section>
+        <section id="age">
+          <h2>07 · Age Requirement</h2>
+          <p>The service is intended only for users who are at least 18 years of age. Anyone under 18 must not download, install, access, or use the service. If you do not meet this age requirement, stop using the service and delete the app and its local data.</p>
+        </section>
+        <section id="changes">
+          <h2>08 · Changes to This Policy</h2>
+          <p>This policy will be revised when service features or information handling practices change. Where a change requires separate notice or consent, the applicable steps must be completed before the relevant processing begins.</p>
+          <p>For the rules on using the service, please read the <a href="terms-en.html">Terms of Use</a>.</p>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <a href="terms-en.html">Read the Terms of Use</a>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+</body>
+</html>

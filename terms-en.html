@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Understand the rules for network testing, what results mean, and what to consider before sharing a report.">
+  <title>Terms of Use</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f4f1;
+      --surface: #ffffff;
+      --text: #17171a;
+      --muted: #6e6e76;
+      --line: #ebe9e4;
+      --accent: #2d5be3;
+      --accent-soft: #e6eeff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e10;
+        --surface: #1c1c1f;
+        --text: #f2f2f4;
+        --muted: #a3a3ab;
+        --line: #2c2c30;
+        --accent: #7c9bff;
+        --accent-soft: #1f2a47;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      overflow-wrap: break-word;
+    }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+    .skip { position: absolute; top: -100px; left: 16px; padding: 8px 16px; background: var(--surface); }
+    .skip:focus { top: 12px; }
+    .shell { width: min(100% - 48px, 1080px); margin: 0 auto; }
+    .document-nav { display: flex; gap: 28px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .document-nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+    .document-nav a.current { color: var(--text); font-weight: 600; text-decoration: underline; }
+    header { padding: 48px 0 32px; max-width: 740px; }
+    .eyebrow { margin: 0 0 10px; color: var(--muted); font-size: 14px; letter-spacing: .12em; }
+    h1 { margin: 0 0 18px; font-size: clamp(32px, 5vw, 46px); line-height: 1.25; letter-spacing: -.04em; }
+    .intro { margin: 0; color: var(--muted); }
+    .layout { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 40px; align-items: start; padding-bottom: 48px; }
+    .toc { position: sticky; top: 24px; padding: 18px 0; }
+    .toc h2 { font-size: 14px; color: var(--muted); margin: 0 0 10px; font-weight: 500; }
+    .toc ol { list-style: none; padding: 0; margin: 0; }
+    .toc a { display: block; min-height: 44px; padding: 7px 0; text-decoration: none; font-size: 15px; }
+    .paper { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 10px 36px; }
+    section { padding: 26px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    h2 { font-size: 21px; line-height: 1.5; margin: 0 0 14px; }
+    p { margin: 0 0 14px; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { padding-left: 1.35em; margin: 0 0 14px; }
+    li + li { margin-top: 8px; }
+    .note { background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; }
+    footer { display: flex; flex-wrap: wrap; gap: 16px 28px; padding: 24px 0 36px; border-top: 1px solid var(--line); font-size: 14px; }
+    footer a { display: inline-block; padding: 8px 0; }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 32px, 620px); }
+      header { padding: 32px 0 24px; }
+      .layout { grid-template-columns: 1fr; gap: 20px; padding-bottom: 28px; }
+      .toc { position: static; padding: 0; }
+      .toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
+      .paper { padding: 2px 22px; border-radius: 16px; }
+      section { padding: 24px 0; }
+      h2 { font-size: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --line: #ccc; --accent: #000; --accent-soft: #fff; }
+      body { font-size: 11pt; line-height: 1.65; }
+      .shell { width: 100%; }
+      .skip, .document-nav, .toc, footer { display: none; }
+      header { padding: 0 0 18pt; max-width: none; }
+      h1 { font-size: 26pt; }
+      .layout { display: block; padding: 0; }
+      .paper { border: 0; padding: 0; border-radius: 0; }
+      section { padding: 14pt 0; }
+      h2 { font-size: 14pt; break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+      .note { border: 1px solid var(--line); }
+      a { text-decoration: none; }
+      @page { margin: 18mm; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="shell">
+    <nav class="document-nav" aria-label="Legal documents">
+      <a href="privacy-en.html">Privacy Policy</a>
+      <a href="terms-en.html" class="current" title="Current page">Terms of Use</a>
+    </nav>
+    <header>
+      <p class="eyebrow">Service and Your Rights</p>
+      <h1>Terms of Use</h1>
+      <p class="intro">Understand the rules for network testing, what results mean, and what to consider before sharing a report.</p>
+    </header>
+    <div class="layout">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+            <li><a href="#acceptance">01 · Reading and Accepting</a></li>
+            <li><a href="#service">02 · What the Service Does</a></li>
+            <li><a href="#lawful-use">03 · Lawful Use</a></li>
+            <li><a href="#traffic">04 · Requests and Data Usage</a></li>
+            <li><a href="#results">05 · Understanding Results</a></li>
+            <li><a href="#reports">06 · Reports and Other Services</a></li>
+            <li><a href="#rights">07 · Intellectual Property</a></li>
+            <li><a href="#changes">08 · Changes and Ending Use</a></li>
+        </ol>
+      </nav>
+      <main class="paper" id="content" tabindex="-1">
+        <section id="acceptance">
+          <h2>01 · Reading and Accepting</h2>
+          <p>These terms apply to network tests, comprehensive network checkups, and features for viewing, importing, and sharing reports. Before using the service, read these terms and the <a href="privacy-en.html">Privacy Policy</a> to understand the service rules and how information is handled. If you do not agree to these terms, stop using the service.</p>
+          <p>You must be at least 18 years of age and have the legal capacity to use the service and accept these terms. Anyone under 18 must not download, install, access, or use the service.</p>
+        </section>
+        <section id="service">
+          <h2>02 · What the Service Does</h2>
+          <p>The service runs tests over your current network and provides results on network identity, IP address quality, network exits, connection protocols, domain resolution, service reachability, latency, and speed. It also supports local storage, import, and sharing of checkup reports.</p>
+          <p>Results help you understand current network conditions. Reachability tests reflect responses at the time of testing. They do not grant you access to third-party content or change any third party’s account, subscription, or regional requirements.</p>
+        </section>
+        <section id="lawful-use">
+          <h2>03 · Lawful Use</h2>
+          <p><strong>Illegal use is prohibited.</strong> You must comply with the applicable local laws and regulations where you are located, where you use the service, and those applicable to the relevant services. You must not use the service for unlawful or criminal activities, infringement of others’ rights, or any other conduct prohibited by laws or regulations.</p>
+          <ul>
+          <li>Test only networks, addresses, or services you are authorized to use, and follow the rules of the network administrator and the services being tested.</li>
+          <li>Do not access systems without authorization, steal information, disrupt network operations, or use testing features for attacks, malicious scanning, abusive requests, or circumvention of lawful access controls.</li>
+          <li>Do not use reports to collect, disclose, or distribute another person’s personal information, trade secrets, or other content you are not authorized to process.</li>
+          <li>Do not fabricate or alter reports and present them as authentic test results, or use results to commit fraud, mislead others, or infringe their rights.</li>
+          </ul>
+        </section>
+        <section id="traffic">
+          <h2>04 · Requests and Data Usage</h2>
+          <p>Tests require an internet connection and send requests to test nodes and third-party sites. Speed tests continuously upload and download test data. They may consume substantial network data, battery power, and network resources, and affect other devices on the same network.</p>
+          <p>Consider your data plan, roaming status, and authorization to use the network before starting a test. Network access and data charges are governed by your agreement with the relevant provider.</p>
+          <p>If automatic checkups are enabled, the app may initiate tests when opened. You can disable automatic checkups in settings and stop a test in progress.</p>
+        </section>
+        <section id="results">
+          <h2>05 · Understanding Results</h2>
+          <p>Results are observations made at a particular time, over a particular network path, and in a particular testing environment. They can be affected by your device, network provider, network accelerators, third-party site policies, load, and testing methods. Embedded webpages and native tools may use different measurement environments and return different results.</p>
+          <p>Inferred regions, risk scores, and grades are assessments based on available data. They may be inaccurate or incomplete and do not guarantee identity, location, security, or continued availability. Reports do not replace an independent security audit or professional judgment.</p>
+          <p>A failed, timed-out, or incomplete test does not mean a target service is permanently unavailable. Consider actual usage and repeated tests when interpreting results. Imported reports are supplied by the person sharing them; the service cannot establish their origin or verify that their contents have not been modified.</p>
+        </section>
+        <section id="reports">
+          <h2>06 · Reports and Other Services</h2>
+          <p>Before sharing, make sure you are entitled to disclose the information in the report. Full report links may contain public IP addresses and network details. Anyone with a link can read and forward it, so choose your sharing audience carefully.</p>
+          <p>Third-party testing interfaces, webpages, and sharing destinations are managed by their respective providers. You must also follow their applicable rules when using those services. The service does not guarantee that third-party sites will always respond or that their content, interfaces, or regional rules will remain unchanged.</p>
+          <p>Local reports may be removed because of storage limits, deletion of the app, or changes to device data. Save any reports you wish to keep to a trusted location in advance. Deleting a local report does not recall copies already shared.</p>
+        </section>
+        <section id="rights">
+          <h2>07 · Intellectual Property</h2>
+          <p>Rights in the app’s interface, software, documentation, and related content belong to their respective rights holders. Rights and licensing conditions for third-party content and open-source components are governed by their respective licenses.</p>
+          <p>Unless permitted by law or authorized by the rights holder, you must not copy, distribute, or sell protected software or content, or remove associated rights notices. These terms do not restrict rights granted to you by law or permissions expressly granted by open-source licenses.</p>
+        </section>
+        <section id="changes">
+          <h2>08 · Changes and Ending Use</h2>
+          <p>The service may change or be interrupted because of maintenance, faults, third-party interface changes, or network conditions. When service features or information handling practices change, the relevant explanations and terms will be revised accordingly. Any notice or consent required by law must be handled as required.</p>
+          <p>You may stop using the service at any time. Before doing so, save reports you wish to keep, disable automatic checkups, and use the system controls to delete the app and its local data as appropriate.</p>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <a href="privacy-en.html">Read the Privacy Policy</a>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
